@@ -14,6 +14,11 @@
 		8374123B2828C6E900246D6C /* Order.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837412392828C6E900246D6C /* Order.xcdatamodeld */; };
 		8374123D2828C6EB00246D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8374123C2828C6EB00246D6C /* Assets.xcassets */; };
 		837412402828C6EB00246D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8374123E2828C6EB00246D6C /* LaunchScreen.storyboard */; };
+		837412482828C80000246D6C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837412472828C80000246D6C /* Order.swift */; };
+		8374124A2829335100246D6C /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837412492829335100246D6C /* TabbarViewController.swift */; };
+		8374124C282934E300246D6C /* NewOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374124B282934E300246D6C /* NewOrderVC.swift */; };
+		8374124F2829386800246D6C /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374124D2829386800246D6C /* OrderCell.swift */; };
+		837412502829386800246D6C /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8374124E2829386800246D6C /* OrderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		8374123C2828C6EB00246D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8374123F2828C6EB00246D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837412412828C6EB00246D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837412472828C80000246D6C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		837412492829335100246D6C /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		8374124B282934E300246D6C /* NewOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderVC.swift; sourceTree = "<group>"; };
+		8374124D2829386800246D6C /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		8374124E2829386800246D6C /* OrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				8374123E2828C6EB00246D6C /* LaunchScreen.storyboard */,
 				837412412828C6EB00246D6C /* Info.plist */,
 				837412392828C6E900246D6C /* Order.xcdatamodeld */,
+				837412472828C80000246D6C /* Order.swift */,
+				837412492829335100246D6C /* TabbarViewController.swift */,
+				8374124B282934E300246D6C /* NewOrderVC.swift */,
+				8374124D2829386800246D6C /* OrderCell.swift */,
+				8374124E2829386800246D6C /* OrderCell.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -130,6 +145,7 @@
 			files = (
 				837412402828C6EB00246D6C /* LaunchScreen.storyboard in Resources */,
 				8374123D2828C6EB00246D6C /* Assets.xcassets in Resources */,
+				837412502829386800246D6C /* OrderCell.xib in Resources */,
 				837412382828C6E900246D6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +159,11 @@
 			files = (
 				837412352828C6E900246D6C /* ViewController.swift in Sources */,
 				837412312828C6E900246D6C /* AppDelegate.swift in Sources */,
+				8374124C282934E300246D6C /* NewOrderVC.swift in Sources */,
+				8374124A2829335100246D6C /* TabbarViewController.swift in Sources */,
+				837412482828C80000246D6C /* Order.swift in Sources */,
 				8374123B2828C6E900246D6C /* Order.xcdatamodeld in Sources */,
+				8374124F2829386800246D6C /* OrderCell.swift in Sources */,
 				837412332828C6E900246D6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

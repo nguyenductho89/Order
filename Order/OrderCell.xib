@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="161" id="KGk-i7-Jjw" customClass="OrderCell" customModule="Order" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KfZ-kv-NwQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sV2-X1-cV3">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bnk-YH-iev"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwH-8b-whe">
+                                <rect key="frame" x="55" y="0.0" width="265" height="161"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0l-Gg-Kuw" customClass="SelectButton" customModule="Order" customModuleProvider="target">
+                                <rect key="frame" x="325" y="0.0" width="50" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1eW-8x-SSw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="selectButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gw9-ou-8J2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sV2-X1-cV3" firstAttribute="centerY" secondItem="KfZ-kv-NwQ" secondAttribute="centerY" id="v1k-Ol-g8Y"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KfZ-kv-NwQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B2G-FY-dJr"/>
+                    <constraint firstItem="KfZ-kv-NwQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CNI-Ke-ghs"/>
+                    <constraint firstItem="KfZ-kv-NwQ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="NHj-x8-5Sp"/>
+                    <constraint firstItem="KfZ-kv-NwQ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="aAb-bf-BbS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="disheName" destination="AwH-8b-whe" id="s0c-PD-CKH"/>
+                <outlet property="disheState" destination="l0l-Gg-Kuw" id="tzY-tg-vdq"/>
+                <outlet property="imgView" destination="sV2-X1-cV3" id="qP8-Yk-jl6"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="102.12053571428571"/>
+        </tableViewCell>
+    </objects>
+</document>
